@@ -24,12 +24,12 @@
     <repository>
       <id>coreapp-release</id>
       <name>coreapp-release</name>
-      <url>http://13.233.120.14:8081/repository/coreapp-release/</url>
+      <url>http://172.31.10.213:8081/repository/coreapp-release/</url>
     </repository>
     <snapshotRepository>
       <id>coreapp-snapshots</id>
       <name>coreapp-snapshots</name>
-      <url>http://13.233.120.14:8081/repository/coreapp-snapshots/</url>
+      <url>http://172.31.10.213:8081/repository/coreapp-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
