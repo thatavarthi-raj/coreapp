@@ -4,7 +4,7 @@
   <groupId>com.vytec.app</groupId>
   <artifactId>core-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>core-app</name>
   <url>http://maven.apache.org</url>
     <properties>
@@ -17,19 +17,23 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
-      <scope>tesst</scope>
+      <scope>test</scope>
     </dependency>
   </dependencies>
-  <distributionManagement>
-    <repository>
-      <id>coreapp-release</id>
-      <name>coreapp-release</name>
-      <url>http://172.31.10.213:8081/repository/coreapp-release/</url>
+   <distributionManagement>
+     <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>coreapp-releases</id>
+      <name>coreapp-releases</name>
+      <url>http://13.232.68.212:8081/repository/coreapp-releases/</url>
+      <layout>default</layout>
     </repository>
     <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
       <id>coreapp-snapshots</id>
       <name>coreapp-snapshots</name>
-      <url>http://172.31.10.213:8081/repository/coreapp-snapshots/</url>
-    </snapshotRepository>
+      <url>http://13.232.68.212:8081/repository/coreapp-snapshots/</url>
+      <layout>legacy</layout>
+   </snapshotRepository>
 </distributionManagement>
 </project>
